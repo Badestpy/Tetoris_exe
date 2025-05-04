@@ -3,7 +3,7 @@
 # I would have used notepad++, but I need a slightly more hand-holdy text editor to help me when my code innevitably breaks, so thats why I used VS code.
 # I used Pillow for PIL and Tkinter as a graphics library, and used pyinstaller as a compiler. all were installed through pip.
 # Rage against the compiler is now my motto
-# credits: all (mostly) done by hand by me, @BADESTPIE, with some help from GPT, admittedly.
+# credits: all (mostly) done by hand by me, BADESTPIE (Badestpy on github), with some help from GPT, admittedly.
 
 # this project was initially just a way for me to familiarize myself with graphics library's in python, and i turned into a nightmare.
 # I originaly used Pygame as my graphics library, got to the point of running a blank 400x400 window and was ready to add the GIF.
