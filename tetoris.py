@@ -2,6 +2,7 @@ import os
 import sys
 print("E:\Code\Tetoris", os.getcwd())
 import PIL
+import pygame
 import tkinter as tk
 from itertools import count
 from PIL import Image, ImageTk
@@ -57,6 +58,23 @@ root.configure(bg='black') # window background
 # Display the GIF
 gif_label = AnimatedGIF(root, "tetoris.gif", delay=100)
 gif_label.pack(expand=True)
+
+
+# Initialize pygame mixer to play background music
+pygame.mixer.init()
+music_path = resource_path("tetoris_bit_crushed_midi.mp3")
+pygame.mixer.music.load("tetoris_bit_crushed_midi.mp3")
+pygame.mixer.music.play(loops=-1) # loops indefinitly
+
+# Pause/resume music on window minimize/restore
+def pause_music(event=None):
+    pygame.mixer.music.pause()
+
+def resume_music(event=None):
+    pygame.mixer.music.unpause()
+
+root.bind("<Unmap>", pause_music)
+root.bind("<Map>", resume_music)
 
 
 # Start the program
