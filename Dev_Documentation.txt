@@ -1,15 +1,17 @@
-# For the majority of this small project, I was able to get away with just flipping through python and python module documentation.
-# I admit, some help from GPT4o did help while I was fighting the compiler, other than that the problems with my code were caught by VS code.
-# I would have used notepad++, but I need a slightly more hand-holdy text editor to help me when my code innevitably breaks, so thats why I used VS code.
-# I used Pillow for PIL and Tkinter as a graphics library, and used pyinstaller as a compiler. all were installed through pip.
-# Rage against the compiler is now my motto
-# credits: all (mostly) done by hand by me, BADESTPIE (Badestpy on github), with some help from GPT, admittedly.
+Saturday, May 3rd, 2025
 
-# this project was initially just a way for me to familiarize myself with graphics library's in python, and i turned into a nightmare.
-# I originaly used Pygame as my graphics library, got to the point of running a blank 400x400 window and was ready to add the GIF.
-# Only problem, Pygame doesn't support animated GIFs, only static GIFs.
-# the way to get around this and still use Pygame's library is to split the gif into individual frames and place those into a spritesheet, which I desided was going to be more work than I wanted it to be.
-# my solution was to switch to Tkinter, which does support animated GIFs.
-# I rebuilt my code using Tkinter, which I admit, was a struggle at first given I hadn't used it prior. So by only using the official documentation, I was able to fully replace Pygame with Tkinter in my code.
-# From there, all I needed to do was make sure my code actually works, so after making sure the code could find the files it needed to run for debugging, I installed pyinstaller and attempted to compile a working version for 4-5 hours in the middle of the night.
-# after 20 attempts, I got a working version and the only time I have had to re-compile since was to add one line of code that locks the window to 400x400 since I accidently left it scaleable (line 53).
+For the majority of this small project, I was able to get away with just flipping through python and python module documentation. I admit, some help from GPT4o did help while I was fighting the compiler, other than that the problems with my code were caught by VS code. I would have used notepad++, but I need a slightly more hand-holdy text editor to help me when my code inevitably breaks, so that's why I used VS code. I used Pillow for PIL and Tkinter as a graphics library, and used pyinstaller as a compiler. all were installed through pip.
+
+ credits: all (mostly) done by hand by me, BADESTPIE (Badestpy on github), with some help from GPT, admittedly.
+
+This project was initially just a way for me to familiarize myself with graphics libraries in python, and it turned into a nightmare. I originally used Pygame as my graphics library, got to the point of running a blank 400x400 window and was ready to add the GIF. Only problem, Pygame doesn't support animated GIFs, only static GIFs. The way to get around this and still use Pygame's library is to split the gif into individual frames and place those into a spritesheet, which I decided was going to be more work than I wanted it to be. My solution was to switch to Tkinter, which does support animated GIFs. I rebuilt my code using Tkinter, which I admit, was a small struggle at first given I hadn't used it prior. So by only using the official documentation, I was able to fully replace Pygame with Tkinter in my code. From there, all I needed to do was make sure my code actually works, so after making sure the code could find the files it needed to run for debugging, I installed pyinstaller and attempted to compile a working version for 4-5 hours in the middle of the night. After 20 attempts, I got a working version and the only time I have had to re-compile since was to add one line of code that locks the window to 400x400 since I accidently left it scalable (line 53).
+
+
+Sunday, May 4th (Star Wars Day), 2025
+
+Most of the original version of this project was coded the night of May 3rd, 2025. I decided to make some changes and add upon this slightly throughout the day of Sunday, May 4th (star wars day), 2025.
+
+What was added today were several commits as well as the second release, v.1.1.0
+this update was to add background music to the program, which as of now, the volume cannot be adjusted in the program, and you have to change the volume in the windows volume mixer.
+The background music was added to the code using pygame, which I had previously removed any code from, but its back as I used pygame to play the background music on loop, indefinitly
+The background music itself is the midi that is provided in Hiiragi Magnetite's google drive for "Tetoris", I took the midi and added some bitcrush in Bandlab.
