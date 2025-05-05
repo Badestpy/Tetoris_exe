@@ -1,4 +1,4 @@
-# Tetoris_exe
+# The Indefinitly Spinning Teto
 its a gif, as an EXE
 
 Read Dev_Documentation.txt for more context as to what this is and its purpose.
