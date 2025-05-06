@@ -18,6 +18,37 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
+# all colors definitions, of which I definitly will only use a few, but they are nice to have
+# most of these are from Catppuccin's Mochca pallete, a color palette I like a lot
+WHITE = "#FFFFFF"
+BLACK = "#000000"
+BASE = "#1e1e2e"
+MANTLE = "#181825"
+CRUST = "#11111b"
+SURFACE0 = "#313244"
+SURFACE1 = "#45475a"
+SURFACE2 = "#585b70"
+OVERLAY0 = "#6c7086"
+OVERLAY1 = "#7f849c"
+OVERLAY2 = "#9399b2"
+SUBTEXT0 = "#a6adc8"
+SUBTEXT1 = "#bac2de"
+TEXT = "#cdd6f4"
+LAVENDER = "#b4befe"
+BLUE = "#89b4fa"
+SAPPHIRE = "#74c7ec"
+SKY = "#89dceb"
+TEAL = "#94e2d5"
+GREEN = "#a6e3a1"
+YELLOW = "#f9e2af"
+PEACH = "#fab387"
+MAROON = "#eba0ac"
+RED = "#f38ba8"
+MAUVE = "#cba6f7"
+PINK = "#f5c2e7"
+FLAMINGO ="#f2cdcd"
+ROSEWATER = "#f5e0dc"
+
 
 class AnimatedGIF(tk.Label):
     def __init__(self, master, gif_path, delay=100):
