@@ -20,9 +20,11 @@ def resource_path(relative_path):
 
 # all colors definitions, of which I definitely will only use a few, but they are nice to have
 
-# Catppuccin Mocha Pallete Color
+# base colors
 WHITE = "#FFFFFF"
 BLACK = "#000000"
+
+# Catppuccin Mocha Pallete Color
 BASE = "#1e1e2e"
 MANTLE = "#181825"
 CRUST = "#11111b"
