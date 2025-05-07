@@ -6,7 +6,7 @@ import pygame
 import tkinter as tk
 from itertools import count
 from PIL import Image, ImageTk
-
+import project_colors
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -18,72 +18,9 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-# all colors definitions, of which I definitely will only use a few, but they are nice to have
-
-# base colors
-WHITE = "#FFFFFF"
-BLACK = "#000000"
-
-# Catppuccin Mocha Pallete Color
-BASE = "#1e1e2e"
-MANTLE = "#181825"
-CRUST = "#11111b"
-SURF0 = "#313244"
-SURF1 = "#45475a"
-SURF2 = "#585b70"
-OV0 = "#6c7086"
-OV1 = "#7f849c"
-OV2 = "#9399b2"
-SUBT0 = "#a6adc8"
-SUBT1 = "#bac2de"
-TEXT0 = "#cdd6f4"
-LAVENDER = "#b4befe"
-BLUE = "#89b4fa"
-SAPPHIRE = "#74c7ec"
-SKY = "#89dceb"
-TEAL = "#94e2d5"
-GREEN = "#a6e3a1"
-YELLOW = "#f9e2af"
-PEACH = "#fab387"
-MAROON = "#eba0ac"
-RED = "#f38ba8"
-MAUVE = "#cba6f7"
-PINK = "#f5c2e7"
-FLAMINGO ="#f2cdcd"
-ROSEWATER = "#f5e0dc"
-
-# Catppuccin Macchiato Color Pallete
-ROSEWATERMA = "#f4dbd6"
-FLAMINGOMA = "#f0c6c6"
-PINKMA = "#f5bde6"
-MAUVEMA = "c6a0f6"
-REDMA = "#ed8796"
-MAROONMA = "#ee99a0"
-PEACHMA = "#f5a97f"
-YELLOWMA = "#eed49f"
-GREENMA = "#a6da95"
-TEALMA = "#8bd5ca"
-SKYMA = "#91d7e3"
-SAPPHIREMA = "#7dc4e4"
-BLUEMA = "#8aadf4"
-LAVENDERMA = "b7bdf8"
-TEXTMA0 = "#cad3f5"
-SUBTMA1 = "#b8c0e0"
-SUBTMA0 = "#a5adcb"
-OVMA2 = "#939ab7"
-OVMA1 = "#8087a2"
-OVMA0 = "#6e738d"
-SURMA2 = "#5b6078"
-SURMA1 = "#494d64"
-SURMA0 = "#363a4f"
-BASEMA = "#24273a"
-MANTLEMA = "1e2030"
-CRUSTMA = "#181926"
-
-
 class AnimatedGIF(tk.Label):
     def __init__(self, master, gif_path, delay=100):
-        super().__init__(master, bg='black') # set label background to black
+        super().__init__(master, bg='BLACK')
         gif_path = resource_path(gif_path)
         self.gif = Image.open(gif_path) # FIXED: overwrite gif_path with full path
         self.frames = []
@@ -114,7 +51,7 @@ root = tk.Tk()
 root.title("Tetoris")
 root.geometry("400x400") # this is the resolution I want, don't question me
 root.resizable(False, False) # Lock window size
-root.configure(bg='black') # window background
+root.configure(bg='BLACK') # window background
 
 
 # Display the GIF
